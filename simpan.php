@@ -20,7 +20,7 @@ $currDate->format('Y-m-d H:i:s');
         'latitude' => $param1,
         'longitude' => $param2,
         'bluetooth' => $param3,
-        'tgl_helm_aktif' => $currDate->format('Y-m-d H:i:s'),
+        'last_update' => $currDate->format('Y-m-d H:i:s'),
     );
 
 $firebase = new \Firebase\FirebaseLib($url, $token);
