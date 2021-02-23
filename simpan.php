@@ -14,7 +14,8 @@ $from = new DateTimeZone('GMT');
 $to   = new DateTimeZone('Asia/Singapore');
 $currDate = new DateTime('now', $from);
 $currDate->setTimezone($to);
-$param4 = $currDate->format('Y-m-d/H:i:s');
+// $currDate->format('Y-m-d H:i:s');
+$param4 = $currDate->format('H:i:s');
 
     $_devicestatus= array(
         'latitude' => $param1,
