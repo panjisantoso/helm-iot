@@ -20,10 +20,11 @@ $from = new DateTimeZone('GMT');
 $to   = new DateTimeZone('Asia/Singapore');
 $currDate = new DateTime('now', $from);
 $currDate->setTimezone($to);
-$tgl = $currDate->format('Y-m-d H:i:s');
-
+$tgl1 = $currDate->format('Y-m-d');
+$tgl2 = $currDate->format('H:i:s');
+$result = $tgl1 . ' ' . $tgl2;
 $_devicestatus= array(
-    'last_update' => $currDate->format('Y-m-d H:i:s'),
+    'last_update' => $result,
     'latitude' => $param1,
     'longitude' => $param2,
     'bluetooth' => $param3,
