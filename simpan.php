@@ -14,7 +14,7 @@ $url = 'https://helm-iot-test-default-rtdb.firebaseio.com/';
 $token = 'tn8wkmGaJLQ2oT1iKeCvMeLn58BPz8EyeN1zLlsS'; 
 $DEFAULT_PATH = '/helm-iot';
 
-require_once "remove_old_tanggal.php";
+// require_once "remove_old_tanggal.php";
 
 // $from = new DateTimeZone('GMT');
 // $to   = new DateTimeZone('Asia/Singapore');
