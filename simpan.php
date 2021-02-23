@@ -16,14 +16,19 @@ $DEFAULT_PATH = '/helm-iot';
 
 require_once "remove_old_tanggal.php";
 
-$from = new DateTimeZone('GMT');
-$to   = new DateTimeZone('Asia/Singapore');
-$currDate = new DateTime('now', $from);
-$currDate->setTimezone($to);
-$tgl = $currDate->format('Y-m-d H:i:s');
+// $from = new DateTimeZone('GMT');
+// $to   = new DateTimeZone('Asia/Singapore');
+// $currDate = new DateTime('now', $from);
+// $currDate->setTimezone($to);
+// $tgl = $currDate->format('Y-m-d H:i:s');
+
+$date   = new DateTime(); //this returns the current date time
+$result = $date->format('Y-m-d-H-i-s');
+$krr    = explode('-', $result);
+$result = implode("", $krr);
 
 $_devicestatus= array(
-    'last_update' => $tgl,
+    'last_update' => $result,
     'latitude' => $param1,
     'longitude' => $param2,
     'bluetooth' => $param3,
