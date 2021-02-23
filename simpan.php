@@ -14,13 +14,13 @@ $from = new DateTimeZone('GMT');
 $to   = new DateTimeZone('Asia/Singapore');
 $currDate     = new DateTime('now', $from);
 $currDate->setTimezone($to);
-$currDate->format('Y-m-d H:i:s');
+$param4 = $currDate->format('Y-m-d H:i:s');
 
     $_devicestatus= array(
         'latitude' => $param1,
         'longitude' => $param2,
         'bluetooth' => $param3,
-        'last_update' => $currDate->format('Y-m-d H:i:s'),
+        'last_update' => $param4,
     );
 
 $firebase = new \Firebase\FirebaseLib($url, $token);
