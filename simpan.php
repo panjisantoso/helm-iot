@@ -12,7 +12,7 @@ $DEFAULT_PATH = '/helm-iot';
 
 $from = new DateTimeZone('GMT');
 $to   = new DateTimeZone('Asia/Singapore');
-$currDate     = new DateTime('now', $from);
+$currDate = new DateTime('now', $from);
 $currDate->setTimezone($to);
 $param4 = $currDate->format('Y-m-d H:i:s');
 
