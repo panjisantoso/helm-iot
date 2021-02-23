@@ -16,8 +16,12 @@ $DEFAULT_PATH = '/helm-iot';
 
 require_once "remove_old_tanggal.php";
 
-date_default_timezone_set("Asia/Singapore");
-$tgl = date("h:i:sa");
+$from = new DateTimeZone('GMT');
+$to   = new DateTimeZone('Asia/Singapore');
+$currDate = new DateTime('now', $from);
+$currDate->setTimezone($to);
+$tgl = $currDate->format('Y-m-d H:i:s');
+
 $_devicestatus= array(
     'last_update' => $tgl,
     'latitude' => $param1,
