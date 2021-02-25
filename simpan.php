@@ -21,6 +21,7 @@ $DEFAULT_PATH = '/helm-iot';
 // $tgl = $currDate->format('Y-m-d H:i:s');
 date_default_timezone_set("Asia/Singapore");
 $tgl = date("Y-m-d H:i:s");
+
 $_devicestatus= array(
     'last_update' => $tgl,
     'latitude' => $param1,
