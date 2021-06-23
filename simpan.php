@@ -14,7 +14,7 @@ $param4 = $_GET["arduinoId"];
 $url = 'https://helm-iot-test-default-rtdb.firebaseio.com/'; 
 $token = 'tn8wkmGaJLQ2oT1iKeCvMeLn58BPz8EyeN1zLlsS'; 
 
-$DEFAULT_PATH = '/helm-iot/$arduinoId'; /*sesuaiin setelah "/helm-iot/" dengan address bluetooth slave*/
+$DEFAULT_PATH = '/helm-iot/'+ $param4; /*sesuaiin setelah "/helm-iot/" dengan address bluetooth slave*/
 
 date_default_timezone_set("Asia/Singapore");
 $tgl = date("Y-m-d H:i:s");
