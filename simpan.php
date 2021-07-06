@@ -14,7 +14,7 @@ $param4 = "2";
 $url = 'https://helm-iot-test-default-rtdb.firebaseio.com/'; 
 $token = 'tn8wkmGaJLQ2oT1iKeCvMeLn58BPz8EyeN1zLlsS'; 
 
-$DEFAULT_PATH = "helm-iot/";
+$DEFAULT_PATH = "helm-iot/".$param4;
 
 date_default_timezone_set("Asia/Singapore");
 $tgl = date("Y-m-d H:i:s");
@@ -29,7 +29,7 @@ $_devicestatus= array(
 );
 
 $firebase = new \Firebase\FirebaseLib($url, $token);
-$firebase->update($DEFAULT_PATH+$param4, $_devicestatus);
+$firebase->update($DEFAULT_PATH, $_devicestatus);
 
 print("Update Berhasil");
 ?>
