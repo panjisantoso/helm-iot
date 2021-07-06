@@ -9,12 +9,12 @@ use Kreait\Firebase\Factory;
 $param1 = $_GET["latitude"];
 $param2 = $_GET["longitude"];
 $param3 = $_GET["bluetooth"];
-$param4 = $_GET["arduinoId"];
+$param4 = $_GET["helmId"];
 
 $url = 'https://helm-iot-test-default-rtdb.firebaseio.com/'; 
 $token = 'tn8wkmGaJLQ2oT1iKeCvMeLn58BPz8EyeN1zLlsS'; 
 
-$DEFAULT_PATH = $param4;
+$DEFAULT_PATH = "helm-iot/2";
 
 date_default_timezone_set("Asia/Singapore");
 $tgl = date("Y-m-d H:i:s");
