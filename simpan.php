@@ -24,7 +24,7 @@ $_devicestatus= array(
     'latitude' => $param1,
     'longitude' => $param2,
     'bluetooth' => $param3,
-    'helm_name' => $param4,
+    // 'helm_name' => $param4,
     'alarm_helm' => "0",
 );
 
