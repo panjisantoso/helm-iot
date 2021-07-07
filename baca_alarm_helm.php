@@ -16,7 +16,7 @@ $factory = (new Factory)
 
 
 $database = $factory->createDatabase();
-$reference = $database->getReference("helm-iot").child($param1);
+$reference = $database->getReference("helm-iot.".$param1);
 
 $snapshot = $reference->getSnapshot();
 $value = $snapshot->getValue();
