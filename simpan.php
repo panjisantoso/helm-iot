@@ -25,7 +25,7 @@ $_devicestatus= array(
     'longitude' => $param2,
     'bluetooth' => $param3,
     // 'helm_name' => $param4,
-    'alarm_helm' => "0",
+    // 'alarm_helm' => "0",
 );
 
 $firebase = new \Firebase\FirebaseLib($url, $token);
